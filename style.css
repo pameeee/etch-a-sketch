@@ -5,9 +5,12 @@
 
 .container {
     display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    
     background-color: rgb(255, 209, 249);
-    width: 960px;
-    height: 960px;
+    width: 500px;
+    height: 500px;
 }
 
 .box {
