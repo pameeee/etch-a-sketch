@@ -1,4 +1,4 @@
-const numberOfSquares = 8;
+const numberOfSquares = 16;
 const dimension = 100 / numberOfSquares;
 console.log("Dimension is ", dimension);
 
@@ -14,3 +14,13 @@ function createBoxes() {
 }
 
 createBoxes();
+
+const boxes = document.querySelectorAll(".box");
+
+boxes.forEach((box) => 
+    box.addEventListener(
+        "mouseenter", () => {
+            box.style.backgroundColor = "green";
+        }
+    )
+);

@@ -7,13 +7,12 @@
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    background-color: rgb(255, 209, 249);
     width: 960px;
     height: 960px;
 }
 
 .box {
-    background-color: rgb(255, 107, 230);
-    border: 1px solid white;
+    background-color: white;
+    border: 1px solid green;
     box-sizing: border-box;
 }
