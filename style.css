@@ -14,10 +14,6 @@
 
 .box {
     background-color: rgb(255, 107, 230);
-    width: 25%;
-    height: 25%;
-    /* box-sizing: border-box; */
-    /* height: calc(25% - 2px); */
-    /* width: calc(25% - 2px); */
-    /* margin: 1px; */
+    border: 1px solid white;
+    box-sizing: border-box;
 }
