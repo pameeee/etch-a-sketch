@@ -1,0 +1,18 @@
+/* body {
+    padding: 0;
+    margin: 0;
+} */
+
+.container {
+    display: flex;
+    background-color: rgb(255, 209, 249);
+    width: 960px;
+    height: 960px;
+}
+
+.box {
+    background-color: rgb(255, 107, 230);
+    height: 56px;
+    width: 56px;
+    margin: 4px;
+}
