@@ -1,7 +1,14 @@
 let container = document.querySelector(".container");
 
+function generateRandomRGBColor() {
+    const red = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
+    return `rgb(${red}, ${green}, ${blue})`;
+}
+
 function createBoxes(input) {
-    let dimension = 100 / input;
+    const dimension = 100 / input;
     container.innerHTML = "";
 
     for (let i = 0; i < input ** 2; i++) {
@@ -15,7 +22,7 @@ function createBoxes(input) {
     const boxes = document.querySelectorAll(".box");
     boxes.forEach((box) =>
         box.addEventListener("mouseenter", () => {
-            box.style.backgroundColor = "green";
+            box.style.backgroundColor = generateRandomRGBColor();
         })
     );
 }
@@ -29,7 +36,6 @@ document.querySelector("button").addEventListener("click", function () {
     } else {
         alert("Please enter a valid number not greater than 100.");
     }
-
 });
 
 createBoxes(5);
