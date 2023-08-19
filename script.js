@@ -21,10 +21,15 @@ function createBoxes(input) {
 }
 
 document.querySelector("button").addEventListener("click", function () {
-    const userInput = prompt("Pick a number:");
-    let numberOfSquares = userInput;
-    dimension = 100 / numberOfSquares;
-    createBoxes(numberOfSquares);
+    const userInput = prompt("Pick a number: ");
+    if (userInput <= 100) {
+        let numberOfSquares = userInput;
+        dimension = 100 / numberOfSquares;
+        createBoxes(numberOfSquares);
+    } else {
+        alert("Please enter a valid number not greater than 100.");
+    }
+
 });
 
 createBoxes(5);
