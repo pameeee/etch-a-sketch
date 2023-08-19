@@ -1,11 +1,10 @@
-const numberOfSquares = 16;
+let numberOfSquares = 16;
 const dimension = 100 / numberOfSquares;
-console.log("Dimension is ", dimension);
 
 function createBoxes() {
     for (let i = 0; i < numberOfSquares ** 2; i++) {
-        var container = document.querySelector(".container");
-        var newBox = document.createElement("div");
+        let container = document.querySelector(".container");
+        let newBox = document.createElement("div");
         newBox.classList.add("box");
         newBox.style.width = `${dimension}%`;
         newBox.style.height = `${dimension}%`;
@@ -23,4 +22,12 @@ boxes.forEach((box) =>
             box.style.backgroundColor = "green";
         }
     )
+);
+
+document.querySelector("button").addEventListener(
+    "click", function() {
+        const userInput = prompt("Pick a number:");
+        numberOfSquares = userInput;
+        console.log("New numberOfSquares is ", numberOfSquares);
+    }
 );
